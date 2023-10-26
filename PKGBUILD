@@ -4,7 +4,7 @@
 # Contributor: Dimitris Kiziridis <ragouel@outlook.com>
 
 pkgname=python-charset-normalizer
-pkgver=3.3.0
+pkgver=3.3.1
 pkgrel=1
 pkgdesc='Encoding and language detection alternative to chardet'
 arch=(any)
@@ -19,7 +19,7 @@ checkdepends=(
   python-pytest
   python-pytest-cov
 )
-_tag=165211a4edb601b5ff302157b967365ecd2a5858
+_tag=52086441844a216040e79201eceaf9ca787ffffc
 source=(git+https://github.com/Ousret/charset_normalizer.git#tag=${_tag})
 b2sums=(SKIP)
 
@@ -40,7 +40,7 @@ check() {
 
 package() {
   cd charset_normalizer
-  python setup.py install --root=$pkgdir --optimize=1 --skip-build
+  python setup.py install --root="$pkgdir" --optimize=1 --skip-build
   install -Dm 644 LICENSE -t "${pkgdir}"/usr/share/licenses/python-charset-normalizer/
 }
 
