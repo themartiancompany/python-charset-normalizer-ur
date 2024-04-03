@@ -7,7 +7,7 @@
 _name=charset_normalizer
 pkgname=python-charset-normalizer
 pkgver=3.3.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Encoding and language detection alternative to chardet'
 arch=(any)
 url=https://github.com/Ousret/charset_normalizer
@@ -22,7 +22,6 @@ makedepends=(
 )
 checkdepends=(
   python-pytest
-  python-pytest-cov
 )
 source=("git+$url.git#tag=$pkgver")
 b2sums=('005698ff0db98835326e055cb0097048998d2657b5998d09c1fbd81e0ab6c0551c5faf6c9934e3865dcd337cb2f86646acef37cd65187bf334b50c8328233c9b')
@@ -39,7 +38,7 @@ build() {
 
 check() {
   cd $_name
-  pytest
+  pytest -c /dev/null
 }
 
 package() {
