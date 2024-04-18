@@ -38,7 +38,8 @@ build() {
 
 check() {
   cd $_name
-  pytest -c /dev/null
+  # Override addopts as they invoke coverage testing
+  pytest --override-ini="addopts="
 }
 
 package() {
