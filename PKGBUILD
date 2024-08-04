@@ -1,3 +1,7 @@
+# SPDX-License-Identifier: AGPL-3.0
+#
+# Maintainer: Truocolo <truocolo@aol.com>
+# Maintainer: Pellegrino Prevete (tallero) <pellegrinoprevete@gmail.com>
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Maintainer: Daniel M. Capella <polyzen@archlinux.org>
 # Contributor: lilydjwg <lilydjwg@gmail.com>
@@ -54,7 +58,4 @@ package() {
 }
 
 # vim: ts=2 sw=2 et:
-# SPDX-License-Identifier: AGPL-3.0
-#
-# Maintainer: Truocolo <truocolo@aol.com>
-# Maintainer: Pellegrino Prevete (tallero) <pellegrinoprevete@gmail.com>
+
