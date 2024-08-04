@@ -54,3 +54,7 @@ package() {
 }
 
 # vim: ts=2 sw=2 et:
+# SPDX-License-Identifier: AGPL-3.0
+#
+# Maintainer: Truocolo <truocolo@aol.com>
+# Maintainer: Pellegrino Prevete (tallero) <pellegrinoprevete@gmail.com>
